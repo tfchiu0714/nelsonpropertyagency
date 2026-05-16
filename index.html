@@ -79,6 +79,7 @@
       <div class="flex gap-4 text-sm text-gray-600">
         <a href="#" class="hover:text-brand">首頁</a>
         <a href="#listings" class="hover:text-brand">樓盤</a>
+        <a href="#calculators" class="hover:text-brand">計算機</a>
         <a href="#contact" class="hover:text-brand">聯絡</a>
       </div>
     </div>
@@ -427,15 +428,17 @@
       let avd = 0, ssd = 0;
       // AVD (Ad Valorem Stamp Duty) - simplified HK rates
       if (type === 'hk') {
-        // First-time HK permanent resident - lower rates
-        if (price <= 3000000) avd = price * 0.01;
-        else if (price <= 3532760) avd = price * 0.015 + 100;
-        else if (price <= 4500000) avd = price * 0.0225;
-        else if (price <= 4935480) avd = price * 0.03 + 67500;
-        else if (price <= 6000000) avd = price * 0.03;
-        else if (price <= 6720000) avd = price * 0.035 + 180000;
-        else if (price <= 9000000) avd = price * 0.0375;
-        else if (price <= 10080000) avd = price * 0.0425 + 337500;
+        // Scale 2 (first-time HK permanent resident) rates per user's table
+        if (price <= 4000000) avd = 100;
+        else if (price <= 4323780) avd = 100 + (price - 4000000) * 0.20;
+        else if (price <= 4500000) avd = price * 0.015;
+        else if (price <= 4935480) avd = 67500 + (price - 4500000) * 0.10;
+        else if (price <= 6000000) avd = price * 0.0225;
+        else if (price <= 6642860) avd = 135000 + (price - 6000000) * 0.10;
+        else if (price <= 9000000) avd = price * 0.03;
+        else if (price <= 10080000) avd = 270000 + (price - 9000000) * 0.10;
+        else if (price <= 20000000) avd = price * 0.0375;
+        else if (price <= 21739120) avd = 750000 + (price - 20000000) * 0.10;
         else avd = price * 0.0425;
       } else if (type === 'hk2') {
         // Non-first-time HK permanent resident - higher AVD + SSD
