@@ -1,0 +1,17 @@
+{
+  "id": 99,
+  "district": { "en": "Causeway Bay", "zh": "銅鑼灣" },
+  "size": 500,
+  "price": 7800000,
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "layout": "兩房一廳",
+  "descriptionEn": "Prime location in Causeway Bay.",
+  "descriptionZh": "銅鑼灣核心地段，兩房單位，投資自住皆宜。",
+  "tags": ["投資精選", "核心地段"],
+  "imageUrl": "",
+  "dateAdded": "2026-05-16",
+  "status": "available",
+  "mtrStation": "銅鑼灣",
+  "schoolNet": "12"
+}

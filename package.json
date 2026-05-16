@@ -1,0 +1,7 @@
+﻿{
+  "name": "hk-property-agency",
+  "version": "1.0.0",
+  "description": "富榮地產 Nelson Property Agency website",
+  "main": "index.html",
+  "private": true
+}

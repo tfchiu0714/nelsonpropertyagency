@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "listingNo": "R20260516-01",
+  "type": "sale",
+  "district": { "en": "Lun Chun Street", "zh": "麟祥街" },
+  "floor": "中層",
+  "size": 543,
+  "price": 4550000,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "layout": "不交吉",
+  "descriptionEn": "Mid-floor unit on Lun Chun Street. Sold as-is with existing tenancy.",
+  "descriptionZh": "麟祥街中層，實用543呎，不交吉出售，適合投資收租。",
+  "tags": ["收租", "投資"],
+  "imageUrl": "",
+  "dateAdded": "2026-05-16",
+  "status": "available",
+  "mtrStation": "",
+  "schoolNet": ""
+}
