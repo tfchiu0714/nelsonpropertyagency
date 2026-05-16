@@ -263,7 +263,7 @@
   <script>
     const listings = [
       {
-        id: 1, type: "sale",
+        id: 1, listingNo: "R20260516-01", type: "sale",
         district: { en: "Lun Chun Street", zh: "麟祥街" },
         size: 543, price: 4550000,
         bedrooms: 0, bathrooms: 0,
@@ -275,7 +275,7 @@
         mtrStation: "", schoolNet: ""
       },
       {
-        id: 2, type: "sale",
+        id: 2, listingNo: "R20260516-02", type: "sale",
         district: { en: "Luk Ming Street", zh: "鹿鳴街" },
         size: 257, price: 1900000,
         bedrooms: 0, bathrooms: 0, layout: "開放式",
@@ -286,7 +286,7 @@
         mtrStation: "葵涌", schoolNet: ""
       },
       {
-        id: 3, type: "sale",
+        id: 3, listingNo: "R20260516-03", type: "sale",
         district: { en: "Ming Tak Building", zh: "名德大樓" },
         size: 284, price: 1880000,
         bedrooms: 1, bathrooms: 0, layout: "一房兩廳",
@@ -297,7 +297,7 @@
         mtrStation: "葵涌", schoolNet: ""
       },
       {
-        id: 4, type: "sale",
+        id: 4, listingNo: "R20260516-04", type: "sale",
         district: { en: "Lung To Street", zh: "龍圖街" },
         size: 498, price: 3890000,
         bedrooms: 0, bathrooms: 0, layout: "交吉",
@@ -308,7 +308,7 @@
         mtrStation: "", schoolNet: ""
       },
       {
-        id: 5, type: "sale",
+        id: 5, listingNo: "R20260516-05", type: "sale",
         district: { en: "Ying Yeung Street", zh: "鷹揚街" },
         size: 457, price: 3280000,
         bedrooms: 2, bathrooms: 1, layout: "兩房一廳",
@@ -319,7 +319,7 @@
         mtrStation: "", schoolNet: ""
       },
       {
-        id: 6, type: "sale",
+        id: 6, listingNo: "R20260516-06", type: "sale",
         district: { en: "Tung Hoi Building", zh: "東海大廈" },
         size: 361, price: 2980000,
         bedrooms: 0, bathrooms: 0, layout: "連平台",
@@ -330,7 +330,7 @@
         mtrStation: "", schoolNet: ""
       },
       {
-        id: 7, type: "sale",
+        id: 7, listingNo: "R20260516-07", type: "sale",
         district: { en: "Kowloon City Road", zh: "九龍城道" },
         size: 301, price: 2100000,
         bedrooms: 2, bathrooms: 0, layout: "兩房一廳",
@@ -341,7 +341,7 @@
         mtrStation: "土瓜灣", schoolNet: "34"
       },
       {
-        id: 8, type: "rent",
+        id: 8, listingNo: "R20260516-08", type: "rent",
         district: { en: "King's Court", zh: "金都豪苑" },
         size: 0, price: 4200,
         bedrooms: 0, bathrooms: 0, layout: "車位",
@@ -352,7 +352,7 @@
         mtrStation: "", schoolNet: ""
       },
       {
-        id: 9, type: "sale",
+        id: 9, listingNo: "R20260516-09", type: "sale",
         district: { en: "Kin On Building", zh: "建安大廈" },
         size: 320, price: 3780000,
         bedrooms: 2, bathrooms: 1, layout: "兩房一廳",
@@ -363,7 +363,7 @@
         mtrStation: "", schoolNet: ""
       },
       {
-        id: 10, type: "sale",
+        id: 10, listingNo: "R20260516-10", type: "sale",
         district: { en: "Lung To Street", zh: "龍圖街" },
         size: 531, price: 3950000,
         bedrooms: 2, bathrooms: 1, layout: "兩房一廳",
@@ -374,7 +374,7 @@
         mtrStation: "", schoolNet: ""
       },
       {
-        id: 11, type: "sale",
+        id: 11, listingNo: "R20260516-11", type: "sale",
         district: { en: "Ying Yeung Street", zh: "鷹揚街" },
         size: 457, price: 3280000,
         bedrooms: 2, bathrooms: 1, layout: "兩房一廳",
@@ -385,7 +385,7 @@
         mtrStation: "", schoolNet: ""
       },
       {
-        id: 12, type: "sale",
+        id: 12, listingNo: "R20260516-12", type: "sale",
         district: { en: "Tung Hoi Building", zh: "東海大廈" },
         size: 361, price: 3500000,
         bedrooms: 0, bathrooms: 0, layout: "高層單邊",
@@ -503,6 +503,10 @@
               <div class="flex justify-between items-start mb-2">
                 <h3 class="font-bold text-lg text-gray-800">${item.district.zh} / ${item.district.en}</h3>
                 <span class="text-brand font-bold text-lg">${formatPrice(item)}</span>
+              </div>
+              <div class="flex justify-between text-xs text-gray-400 mb-2">
+                <span>盤號 Listing: <strong>${item.listingNo || 'N/A'}</strong></span>
+                <span>刊登日期: ${item.dateAdded || '-'}</span>
               </div>
               <div class="flex gap-3 text-sm text-gray-500 mb-2">
                 <span><i class="fas fa-vector-square mr-1"></i>${item.size || '-'} 呎</span>
