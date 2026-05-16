@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>富榮地產 Nelson Property Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { light: '#0ea5e9', DEFAULT: '#0284c7', dark: '#0369a1' },
+            gold: '#d4a843',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    .gradient-hero {
+      background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 40%, #0ea5e9 70%, #7dd3fc 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .gradient-hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 40%;
+      background: linear-gradient(transparent, rgba(0,0,0,0.3));
+      pointer-events: none;
+    }
+    .skyline-dots {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 10% 80%, rgba(255,255,255,0.15) 1px, transparent 1px),
+        radial-gradient(circle at 25% 70%, rgba(255,255,255,0.1) 2px, transparent 2px),
+        radial-gradient(circle at 40% 85%, rgba(255,255,255,0.12) 1px, transparent 1px),
+        radial-gradient(circle at 55% 75%, rgba(255,255,255,0.08) 2px, transparent 2px),
+        radial-gradient(circle at 70% 82%, rgba(255,255,255,0.14) 1px, transparent 1px),
+        radial-gradient(circle at 85% 72%, rgba(255,255,255,0.1) 2px, transparent 2px);
+      pointer-events: none;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 50;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.5);
+      transition: transform 0.2s;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); }
+    .status-badge { font-size: 0.65rem; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-brand to-gold flex items-center justify-center text-white text-sm font-bold">NP</div>
+        <div>
+          <span class="font-bold text-lg text-brand-dark">富榮地產</span>
+          <span class="text-xs text-gray-500 ml-2 hidden sm:inline">Nelson Property Agency</span>
+        </div>
+      </div>
+      <div class="flex gap-4 text-sm text-gray-600">
+        <a href="#" class="hover:text-brand">首頁</a>
+        <a href="#listings" class="hover:text-brand">樓盤</a>
+        <a href="#contact" class="hover:text-brand">聯絡</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gradient-hero min-h-[60vh] flex items-center justify-center text-white px-4">
+    <div class="skyline-dots"></div>
+    <div class="relative z-10 text-center max-w-3xl">
+      <h1 class="text-4xl sm:text-6xl font-bold tracking-tight mb-3">富榮地產</h1>
+      <p class="text-xl sm:text-2xl font-light text-cyan-100 mb-2">Nelson Property Agency</p>
+      <p class="text-base sm:text-lg text-cyan-200/80 mb-6">扎根香港 · 用心為你找到理想安樂窩</p>
+      <p class="text-sm text-cyan-200/60 max-w-xl mx-auto leading-relaxed">我們專注香港各區住宅及工商物業，提供買賣、租賃、估價一站式服務。經驗豐富的團隊，為你爭取最優惠條件。</p>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#listings" class="inline-block bg-white text-brand-dark font-semibold px-6 py-3 rounded-lg shadow hover:bg-cyan-50 transition">瀏覽樓盤</a>
+        <a href="https://wa.me/85293486774" target="_blank" class="inline-block border border-white/40 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/10 transition"><i class="fab fa-whatsapp mr-2"></i>WhatsApp 楊小姐</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Listings -->
+  <section id="listings" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-gray-800">精選樓盤</h2>
+      <p class="text-gray-500 mt-2">Featured Listings</p>
+    </div>
+    <!-- Tab Buttons -->
+    <div class="flex justify-center gap-2 mb-10">
+      <button id="tab-sale" class="px-6 py-2 rounded-full font-semibold text-sm transition bg-brand text-white shadow" onclick="switchTab('sale')">🏠 售盤 For Sale (11)</button>
+      <button id="tab-rent" class="px-6 py-2 rounded-full font-semibold text-sm transition bg-gray-200 text-gray-600 hover:bg-gray-300" onclick="switchTab('rent')">🔑 出租 For Rent (1)</button>
+    </div>
+    <div id="listings-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-100 py-16">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">聯絡我們 Contact Us</h2>
+      <p class="text-gray-500 mb-8">歡迎查詢任何樓盤資訊</p>
+      <div class="bg-white rounded-xl shadow-md p-8 space-y-4">
+        <div class="flex items-center justify-center gap-3 text-gray-700">
+          <i class="fab fa-whatsapp text-green-500 text-xl"></i>
+          <span><a href="https://wa.me/85293486774" class="text-brand hover:underline">+852 9348 6774</a> (楊小姐)</span>
+        </div>
+        <div class="flex items-center justify-center gap-3 text-gray-700">
+          <i class="far fa-envelope text-brand text-xl"></i>
+          <span><a href="mailto:info@nelsonpropertyagency.com" class="text-brand hover:underline">info@nelsonpropertyagency.com</a></span>
+        </div>
+        <div class="flex items-center justify-center gap-3 text-gray-700">
+          <i class="fas fa-globe text-gray-500 text-xl"></i>
+          <span>nelsonpropertyagency.com</span>
+        </div>
+      </div>
+
+      <!-- Enquiry Form -->
+      <div class="bg-white rounded-xl shadow-md p-8 mt-6 text-left">
+        <h3 class="font-bold text-lg text-gray-800 mb-4">快速查詢 Quick Enquiry</h3>
+        <form id="enquiry-form" class="space-y-4">
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">姓名 Name *</label>
+            <input type="text" id="enq-name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent">
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">電話 Phone *</label>
+            <input type="tel" id="enq-phone" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent">
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">感興趣樓盤 Property (optional)</label>
+            <input type="text" id="enq-property" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent">
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">查詢內容 Message</label>
+            <textarea id="enq-message" rows="3" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"></textarea>
+          </div>
+          <button type="submit" class="bg-brand text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-dark transition w-full">
+            <i class="fab fa-whatsapp mr-2"></i>透過 WhatsApp 發送 Send via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center text-sm py-6">
+    &copy; 2026 富榮地產 Nelson Property Agency. All rights reserved.
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/85293486774" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp text-white text-2xl"></i>
+  </a>
+
+  <script>
+    const listings = [
+      {
+        id: 1, type: "sale",
+        district: { en: "Lun Chun Street", zh: "麟祥街" },
+        size: 543, price: 4550000,
+        bedrooms: 0, bathrooms: 0,
+        layout: "不交吉",
+        descriptionEn: "Mid-floor unit on Lun Chun Street. Sold as-is with existing tenancy.",
+        descriptionZh: "麟祥街中層，實用543呎，不交吉出售，適合投資收租。",
+        tags: ["收租", "投資"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "", schoolNet: ""
+      },
+      {
+        id: 2, type: "sale",
+        district: { en: "Luk Ming Street", zh: "鹿鳴街" },
+        size: 257, price: 1900000,
+        bedrooms: 0, bathrooms: 0, layout: "開放式",
+        descriptionEn: "Low-floor unit on Luk Ming Street, Kwai Chung. Tenanted for passive income.",
+        descriptionZh: "鹿鳴街低層，實用257呎，葵涌名德，不交吉收租售，回報可觀。",
+        tags: ["收租", "葵涌", "上車盤"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "葵涌", schoolNet: ""
+      },
+      {
+        id: 3, type: "sale",
+        district: { en: "Ming Tak Building", zh: "名德大樓" },
+        size: 284, price: 1880000,
+        bedrooms: 1, bathrooms: 0, layout: "一房兩廳",
+        descriptionEn: "High-floor unit at Ming Tak Building, Kwai Chung. 1-bedroom with living/dining.",
+        descriptionZh: "名德大樓高層，實用284呎，一房兩廳，交吉出售，葵涌上車精選。",
+        tags: ["交吉", "上車盤", "葵涌"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "葵涌", schoolNet: ""
+      },
+      {
+        id: 4, type: "sale",
+        district: { en: "Lung To Street", zh: "龍圖街" },
+        size: 498, price: 3890000,
+        bedrooms: 0, bathrooms: 0, layout: "交吉",
+        descriptionEn: "Low-floor unit on Lung To Street. Vacant possession, ready to move in.",
+        descriptionZh: "龍圖街低層，實用498呎，交吉出售，即買即住。",
+        tags: ["交吉", "實用"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "", schoolNet: ""
+      },
+      {
+        id: 5, type: "sale",
+        district: { en: "Ying Yeung Street", zh: "鷹揚街" },
+        size: 457, price: 3280000,
+        bedrooms: 2, bathrooms: 1, layout: "兩房一廳",
+        descriptionEn: "High-floor unit on Ying Yeung Street. 2-bedroom, great layout.",
+        descriptionZh: "鷹揚街高層，實用457呎，兩房一廳，間隔實用，售$328萬。",
+        tags: ["自住", "實用"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "", schoolNet: ""
+      },
+      {
+        id: 6, type: "sale",
+        district: { en: "Tung Hoi Building", zh: "東海大廈" },
+        size: 361, price: 2980000,
+        bedrooms: 0, bathrooms: 0, layout: "連平台",
+        descriptionEn: "Low-floor unit at Tung Hoi Building with private terrace. Vacant possession.",
+        descriptionZh: "東海大廈低層連平台，實用361呎，交吉出售，平台罕有。",
+        tags: ["連平台", "交吉", "荀盤"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "", schoolNet: ""
+      },
+      {
+        id: 7, type: "sale",
+        district: { en: "Kowloon City Road", zh: "九龍城道" },
+        size: 301, price: 2100000,
+        bedrooms: 2, bathrooms: 0, layout: "兩房一廳",
+        descriptionEn: "7th-floor walk-up on Kowloon City Road. Tenanted. Split-title building.",
+        descriptionZh: "九龍城道唐七樓分契樓，實用301呎，兩房一廳，收租中，售$210萬(隨吉)。",
+        tags: ["收租", "唐樓", "分契"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "土瓜灣", schoolNet: "34"
+      },
+      {
+        id: 8, type: "rent",
+        district: { en: "King's Court", zh: "金都豪苑" },
+        size: 0, price: 4200,
+        bedrooms: 0, bathrooms: 0, layout: "車位",
+        descriptionEn: "Prime parking space for rent at King's Court. Great location.",
+        descriptionZh: "金都豪苑車位招租，靚位，租金$4,200/月。",
+        tags: ["車位", "招租"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "", schoolNet: ""
+      },
+      {
+        id: 9, type: "sale",
+        district: { en: "Kin On Building", zh: "建安大廈" },
+        size: 320, price: 3780000,
+        bedrooms: 2, bathrooms: 1, layout: "兩房一廳",
+        descriptionEn: "Low-floor unit at Kin On Building. 2-bedroom, well-maintained.",
+        descriptionZh: "建安大廈低層，實用320呎，兩房一廳，售$378萬。",
+        tags: ["自住", "上車"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "", schoolNet: ""
+      },
+      {
+        id: 10, type: "sale",
+        district: { en: "Lung To Street", zh: "龍圖街" },
+        size: 531, price: 3950000,
+        bedrooms: 2, bathrooms: 1, layout: "兩房一廳",
+        descriptionEn: "6th-floor walk-up on Lung To Street. Spacious 2-bedroom.",
+        descriptionZh: "龍圖街唐六樓，實用531呎，兩房一廳，售$395萬。",
+        tags: ["唐樓", "實用", "大單位"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "", schoolNet: ""
+      },
+      {
+        id: 11, type: "sale",
+        district: { en: "Ying Yeung Street", zh: "鷹揚街" },
+        size: 457, price: 3280000,
+        bedrooms: 2, bathrooms: 1, layout: "兩房一廳",
+        descriptionEn: "7th-floor walk-up on Ying Yeung Street. 2-bedroom unit.",
+        descriptionZh: "鷹揚街唐七樓，實用457呎，兩房一廳，售$328萬。",
+        tags: ["唐樓", "自住","實用"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "", schoolNet: ""
+      },
+      {
+        id: 12, type: "sale",
+        district: { en: "Tung Hoi Building", zh: "東海大廈" },
+        size: 361, price: 3500000,
+        bedrooms: 0, bathrooms: 0, layout: "高層單邊",
+        descriptionEn: "High-floor corner unit at Tung Hoi Building with multiple windows.",
+        descriptionZh: "東海大廈高層，單邊多窗，光猛通爽，售$350萬。",
+        tags: ["單邊", "高層", "多窗"],
+        imageUrl: "", dateAdded: "2026-05-16", status: "available",
+        mtrStation: "", schoolNet: ""
+      }
+    ];
+
+    const formatter = new Intl.NumberFormat('en-HK');
+
+    let activeTab = 'sale';
+
+    function switchTab(tab) {
+      activeTab = tab;
+      document.getElementById('tab-sale').className = tab === 'sale'
+        ? 'px-6 py-2 rounded-full font-semibold text-sm transition bg-brand text-white shadow'
+        : 'px-6 py-2 rounded-full font-semibold text-sm transition bg-gray-200 text-gray-600 hover:bg-gray-300';
+      document.getElementById('tab-rent').className = tab === 'rent'
+        ? 'px-6 py-2 rounded-full font-semibold text-sm transition bg-brand text-white shadow'
+        : 'px-6 py-2 rounded-full font-semibold text-sm transition bg-gray-200 text-gray-600 hover:bg-gray-300';
+      renderListings();
+    }
+
+    function formatPrice(item) {
+      if (item.type === 'rent') {
+        return '$' + formatter.format(item.price) + '/月';
+      }
+      return '$' + formatter.format(item.price);
+    }
+
+    function renderListings() {
+      const grid = document.getElementById('listings-grid');
+      const filtered = listings.filter(l => l.type === activeTab);
+      if (filtered.length === 0) {
+        grid.innerHTML = '<div class="col-span-full text-center text-gray-400 py-12">暫無樓盤</div>';
+        return;
+      }
+      grid.innerHTML = filtered.map(item => {
+        const statusColor = item.status === 'available' ? 'bg-green-500' : 'bg-red-500';
+        const statusText = item.status === 'available' ? (item.type === 'rent' ? '招租' : '有售') : '已售';
+        const typeBadge = item.type === 'rent' ? 'bg-amber-500' : 'bg-brand';
+        const typeText = item.type === 'rent' ? '出租' : '售盤';
+        return `
+          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition group">
+            <div class="h-40 bg-gradient-to-br from-cyan-100 to-blue-200 flex items-center justify-center text-brand/30 text-6xl relative">
+              <i class="fas fa-building"></i>
+              <span class="absolute top-2 left-2 ${typeBadge} text-white text-xs font-semibold px-2 py-0.5 rounded-full status-badge">${typeText}</span>
+              <span class="absolute top-2 right-2 ${statusColor} text-white text-xs font-semibold px-2 py-0.5 rounded-full status-badge">${statusText}</span>
+            </div>
+            <div class="p-4">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-bold text-lg text-gray-800">${item.district.zh} / ${item.district.en}</h3>
+                <span class="text-brand font-bold text-lg">${formatPrice(item)}</span>
+              </div>
+              <div class="flex gap-3 text-sm text-gray-500 mb-2">
+                <span><i class="fas fa-vector-square mr-1"></i>${item.size || '-'} 呎</span>
+                <span><i class="fas fa-bed mr-1"></i>${item.bedrooms || '-'} 房</span>
+                <span><i class="fas fa-bath mr-1"></i>${item.bathrooms || '-'} 廁</span>
+              </div>
+              <p class="text-xs text-gray-400 mb-2">間隔: ${item.layout}</p>
+              <p class="text-sm text-gray-600 mb-3">${item.descriptionZh}</p>
+              <div class="flex flex-wrap gap-1 mb-2">
+                ${item.tags.map(t => `<span class="bg-cyan-50 text-cyan-700 text-xs px-2 py-0.5 rounded-full">${t}</span>`).join('')}
+              </div>
+              <div class="flex justify-between text-xs text-gray-400 mb-1">
+                <span><i class="fas fa-subway mr-1"></i>${item.mtrStation || '-'}</span>
+                <span><i class="fas fa-school mr-1"></i>校網 ${item.schoolNet || '-'}</span>
+              </div>
+              <a href="https://www.google.com/maps/search/${encodeURIComponent(item.district.zh + ' ' + item.district.en)}" target="_blank" class="text-xs text-brand hover:text-brand-dark transition flex items-center gap-1 mt-1">
+                <i class="fas fa-map-marker-alt"></i>查看地圖 View Map
+              </a>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    renderListings();
+
+    // Enquiry form → WhatsApp redirect
+    document.getElementById('enquiry-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('enq-name').value.trim();
+      const phone = document.getElementById('enq-phone').value.trim();
+      const property = document.getElementById('enq-property').value.trim();
+      const message = document.getElementById('enq-message').value.trim();
+      let text = `🔴 *新查詢 New Enquiry* - 富榮地產%0A%0A`;
+      text += `*姓名 Name:* ${encodeURIComponent(name)}%0A`;
+      text += `*電話 Phone:* ${encodeURIComponent(phone)}%0A`;
+      if (property) text += `*樓盤 Property:* ${encodeURIComponent(property)}%0A`;
+      if (message) text += `*查詢 Message:* ${encodeURIComponent(message)}%0A%0A`;
+      text += `_來自 nelsonpropertyagency.com_`;
+      window.open(`https://wa.me/85293486774?text=${text}`, '_blank');
+    });
+  </script>
+</body>
+</html>
