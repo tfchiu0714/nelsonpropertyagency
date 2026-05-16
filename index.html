@@ -113,6 +113,90 @@
     <div id="listings-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
   </section>
 
+  <!-- Mortgage Calculator Section -->
+  <section id="calculators" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800">按揭及印花稅計算機</h2>
+      <p class="text-gray-500 mt-2">Mortgage &amp; Stamp Duty Calculator</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      <!-- Mortgage Calculator -->
+      <div class="bg-white rounded-xl shadow-md p-6 lg:p-8">
+        <h3 class="text-xl font-bold text-gray-800 mb-2">💰 按揭計算機 Mortgage Calculator</h3>
+        <p class="text-xs text-gray-400 mb-6">僅供參考 · Actual rates vary by bank and applicant</p>
+        <div class="space-y-4">
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">物業價格 Property Price (HK$)</label>
+            <input type="number" id="mort-price" value="5000000" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand">
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm text-gray-600 mb-1">首期 Down Payment (%)</label>
+              <select id="mort-down" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand">
+                <option value="10">10% (High LTV)</option>
+                <option value="20">20%</option>
+                <option value="30" selected>30%</option>
+                <option value="40">40%</option>
+                <option value="50">50%</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm text-gray-600 mb-1">年利率 Interest Rate (%)</label>
+              <input type="number" id="mort-rate" value="3.5" step="0.1" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand">
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">還款期 Loan Term (年)</label>
+            <select id="mort-term" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand">
+              <option value="10">10 年</option>
+              <option value="15">15 年</option>
+              <option value="20">20 年</option>
+              <option value="25">25 年</option>
+              <option value="30" selected>30 年</option>
+            </select>
+          </div>
+          <button onclick="calcMortgage()" class="bg-brand text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-dark transition w-full">計算 Calculate</button>
+          <div id="mort-result" class="bg-gray-50 rounded-lg p-4 text-sm space-y-1 hidden">
+            <div class="flex justify-between"><span>物業價格 Property Price:</span><span class="font-semibold" id="r-price"></span></div>
+            <div class="flex justify-between"><span>首期 Down Payment:</span><span class="font-semibold text-brand" id="r-down"></span></div>
+            <div class="flex justify-between"><span>貸款額 Loan Amount:</span><span class="font-semibold" id="r-loan"></span></div>
+            <div class="border-t pt-1 mt-1 flex justify-between"><span class="font-bold">每月供款 Monthly Payment:</span><span class="font-bold text-brand text-base" id="r-monthly"></span></div>
+            <div class="flex justify-between text-xs text-gray-400"><span>總利息 Total Interest:</span><span id="r-interest"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stamp Duty Calculator -->
+      <div class="bg-white rounded-xl shadow-md p-6 lg:p-8">
+        <h3 class="text-xl font-bold text-gray-800 mb-2">📜 印花稅計算機 Stamp Duty Calculator</h3>
+        <p class="text-xs text-gray-400 mb-6">香港物業印花稅估算 (僅供參考) · Based on current HK rates</p>
+        <div class="space-y-4">
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">物業價格 Property Price (HK$)</label>
+            <input type="number" id="sd-price" value="5000000" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand">
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">買家類別 Buyer Type</label>
+            <select id="sd-type" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand">
+              <option value="hk">香港永久居民 (首置) First-time HK Permanent Resident</option>
+              <option value="hk2">香港永久居民 (非首置) HK Permanent Resident (not first-time)</option>
+              <option value="non-hk">非香港永久居民 / 公司名義 Non-HK Resident / Company</option>
+            </select>
+          </div>
+          <button onclick="calcStampDuty()" class="bg-brand text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-dark transition w-full">計算 Calculate</button>
+          <div id="sd-result" class="bg-gray-50 rounded-lg p-4 text-sm space-y-1 hidden">
+            <div class="flex justify-between"><span>物業價格 Property Price:</span><span class="font-semibold" id="sd-r-price"></span></div>
+            <div class="flex justify-between"><span>從價印花稅 AVD:</span><span class="font-semibold" id="sd-r-avd"></span></div>
+            <div class="flex justify-between"><span>額外印花稅 SSD (若適用):</span><span class="font-semibold" id="sd-r-ssd"></span></div>
+            <div class="border-t pt-1 mt-1 flex justify-between"><span class="font-bold">總印花稅 Total Stamp Duty:</span><span class="font-bold text-brand text-base" id="sd-r-total"></span></div>
+            <div class="text-xs text-gray-400 mt-1">* 實際稅率以稅務局為準 Actual rates determined by Inland Revenue Department</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="bg-gray-100 py-16">
     <div class="max-w-2xl mx-auto px-4 text-center">
@@ -315,6 +399,65 @@
     const formatter = new Intl.NumberFormat('en-HK');
 
     let activeTab = 'sale';
+
+    /* ─── Mortgage Calculator ─── */
+    function calcMortgage() {
+      const price = parseFloat(document.getElementById('mort-price').value) || 0;
+      const downPct = parseFloat(document.getElementById('mort-down').value) / 100;
+      const rate = parseFloat(document.getElementById('mort-rate').value) / 100 / 12;
+      const term = parseInt(document.getElementById('mort-term').value) * 12;
+      const down = price * downPct;
+      const loan = price - down;
+      const payment = loan * rate * Math.pow(1 + rate, term) / (Math.pow(1 + rate, term) - 1);
+      const totalPaid = payment * term;
+      const interest = totalPaid - loan;
+      const r = document.getElementById('mort-result');
+      document.getElementById('r-price').textContent = '$' + formatter.format(price);
+      document.getElementById('r-down').textContent = '$' + formatter.format(down) + ' (' + (downPct*100) + '%)';
+      document.getElementById('r-loan').textContent = '$' + formatter.format(loan);
+      document.getElementById('r-monthly').textContent = '$' + formatter.format(Math.round(payment));
+      document.getElementById('r-interest').textContent = '$' + formatter.format(Math.round(interest));
+      r.classList.remove('hidden');
+    }
+
+    /* ─── Stamp Duty Calculator (HK Rates) ─── */
+    function calcStampDuty() {
+      const price = parseFloat(document.getElementById('sd-price').value) || 0;
+      const type = document.getElementById('sd-type').value;
+      let avd = 0, ssd = 0;
+      // AVD (Ad Valorem Stamp Duty) - simplified HK rates
+      if (type === 'hk') {
+        // First-time HK permanent resident - lower rates
+        if (price <= 3000000) avd = price * 0.01;
+        else if (price <= 3532760) avd = price * 0.015 + 100;
+        else if (price <= 4500000) avd = price * 0.0225;
+        else if (price <= 4935480) avd = price * 0.03 + 67500;
+        else if (price <= 6000000) avd = price * 0.03;
+        else if (price <= 6720000) avd = price * 0.035 + 180000;
+        else if (price <= 9000000) avd = price * 0.0375;
+        else if (price <= 10080000) avd = price * 0.0425 + 337500;
+        else avd = price * 0.0425;
+      } else if (type === 'hk2') {
+        // Non-first-time HK permanent resident - higher AVD + SSD
+        avd = price * 0.075;
+        const holding = parseInt(document.getElementById('sd-holding')?.value || '12');
+        if (holding <= 6) ssd = price * 0.20;
+        else if (holding <= 12) ssd = price * 0.10;
+        else if (holding <= 24) ssd = price * 0.05;
+        else ssd = 0;
+      } else {
+        // Non-HK resident / company
+        avd = price * 0.15;
+        ssd = price * 0.10;
+      }
+      const total = avd + ssd;
+      const r = document.getElementById('sd-result');
+      document.getElementById('sd-r-price').textContent = '$' + formatter.format(price);
+      document.getElementById('sd-r-avd').textContent = '$' + formatter.format(Math.round(avd)) + ' (' + (avd/price*100).toFixed(2) + '%)';
+      document.getElementById('sd-r-ssd').textContent = ssd > 0 ? '$' + formatter.format(Math.round(ssd)) : '不適用 N/A';
+      document.getElementById('sd-r-total').textContent = '$' + formatter.format(Math.round(total));
+      r.classList.remove('hidden');
+    }
 
     function switchTab(tab) {
       activeTab = tab;
