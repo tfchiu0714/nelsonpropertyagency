@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330" width="700" height="330">
+<rect width="700" height="330" fill="#f8fafc" rx="8"/><text x="350" y="25" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle">九龍中各區成交呎價對比</text>
+<line x1="30" y1="280" x2="38" y2="280" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="284" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">$0K</text>
+    <line x1="30" y1="225.45454545454544" x2="38" y2="225.45454545454544" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="229.45454545454544" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">$5K</text>
+    <line x1="30" y1="170.9090909090909" x2="38" y2="170.9090909090909" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="174.9090909090909" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">$10K</text>
+    <line x1="30" y1="116.36363636363637" x2="38" y2="116.36363636363637" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="120.36363636363637" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">$15K</text>
+    <line x1="30" y1="61.81818181818181" x2="38" y2="61.81818181818181" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="65.81818181818181" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">$20K</text>
+    <rect x="50" y="158.28727272727275" width="100" height="121.71272727272726" rx="4" fill="#0284c7" opacity="1"/>
+    <rect x="174" y="144.33454545454546" width="100" height="135.66545454545454" rx="4" fill="#94a3b8" opacity="0.7"/>
+    <rect x="298" y="107.63636363636365" width="100" height="172.36363636363635" rx="4" fill="#94a3b8" opacity="0.7"/>
+    <rect x="422" y="67.27272727272728" width="100" height="212.72727272727272" rx="4" fill="#94a3b8" opacity="0.7"/>
+    <rect x="546" y="96.72727272727272" width="100" height="183.27272727272728" rx="4" fill="#94a3b8" opacity="0.7"/>
+    <text x="100" y="298" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">土瓜灣
+TKW</text>
+    <text x="224" y="298" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">紅磡
+HH</text>
+    <text x="348" y="298" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">黃埔
+Wha</text>
+    <text x="472" y="298" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">啟德
+KT</text>
+    <text x="596" y="298" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">九龍城
+KC</text>
+    <text x="100" y="150.28727272727275" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#0284c7" text-anchor="middle">$11,157</text>
+    <text x="224" y="136.33454545454546" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">$12,436</text>
+    <text x="348" y="99.63636363636365" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">$15,800</text>
+    <text x="472" y="59.27272727272728" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">$19,500</text>
+    <text x="596" y="88.72727272727272" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">$16,800</text>
+    <text x="680" y="330" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">資料來源: Midland | 富榮地產整理</text>
+</svg>
