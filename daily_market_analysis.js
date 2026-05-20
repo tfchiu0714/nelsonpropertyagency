@@ -33,7 +33,7 @@ function bar(months,vals,mx,title,cl,cls,unit,src){
     l+=`<text x="${x+bw/2}" y="${by+18}" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">${m}</text>\n    `;
     v+=`<text x="${x+bw/2}" y="${y-8}" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">${vals[i]}${unit||""}</text>\n    `;
   });
-  return `<?xml version="1.0"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${cw} ${ch}" width="${cw}" height="${ch}">\n<rect width="${cw}" height="${ch}" fill="#f8fafc" rx="8"/><text x="${cw/2}" y="25" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle">${title}</text><line x1="40" y1="${by}" x2="${cw-20}" y2="${by}" stroke="#cbd5e1" stroke-width="1"/>\n${b}${l}${v}<text x="${cw-20}" y="${by+50}" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">資料來源: ${src} | 富榮地產整理</text>\n</svg>`;
+  return `<?xml version="1.0"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${cw} ${ch}" width="${cw}" height="${ch}">\n<rect width="${cw}" height="${ch}" fill="#f8fafc" rx="8"/><text x="${cw/2}" y="25" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle">${title}</text><line x1="40" y1="${by}" x2="${cw-20}" y2="${by}" stroke="#cbd5e1" stroke-width="1"/>\n${b}${l}${v}<text x="${cw-20}" y="${by+50}" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">僅供參考</text>\n</svg>`;
 }
 
 function cmp(){
@@ -45,7 +45,7 @@ function cmp(){
     v+=`<text x="${x+bw/2}" y="${y-8}" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="${i===0?"#0284c7":"#64748b"}" text-anchor="middle">$${d.dp[i].toLocaleString()}</text>\n    `;
   });
   [0,5,10,15,20].forEach(k=>{const y=by-(k*1000/mv)*240;gr+=`<line x1="30" y1="${y}" x2="38" y2="${y}" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="${y+4}" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">$${k}K</text>\n    `;});
-  return `<?xml version="1.0"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${cw} ${ch}" width="${cw}" height="${ch}">\n<rect width="${cw}" height="${ch}" fill="#f8fafc" rx="8"/><text x="${cw/2}" y="25" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle">九龍中各區成交呎價對比</text>\n${gr}${b}${l}${v}<text x="${cw-20}" y="${by+50}" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">資料來源: Midland | 富榮地產整理</text>\n</svg>`;
+  return `<?xml version="1.0"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${cw} ${ch}" width="${cw}" height="${ch}">\n<rect width="${cw}" height="${ch}" fill="#f8fafc" rx="8"/><text x="${cw/2}" y="25" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle">九龍中各區成交呎價對比</text>\n${gr}${b}${l}${v}<text x="${cw-20}" y="${by+50}" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">僅供參考</text>\n</svg>`;
 }
 
 function rent(){
@@ -57,7 +57,7 @@ function rent(){
     v+=`<text x="${x0+bw/2}" y="${y-8}" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="${i===0?"#0284c7":"#64748b"}" text-anchor="middle">${x.v}%</text>\n    `;
   });
   [0,1,2,3,4,5].forEach(k=>{const y=by-(k/mv)*240;gr+=`<line x1="30" y1="${y}" x2="38" y2="${y}" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="${y+4}" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">${k}%</text>\n    `;});
-  return `<?xml version="1.0"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${cw} ${ch}" width="${cw}" height="${ch}">\n<rect width="${cw}" height="${ch}" fill="#f8fafc" rx="8"/><text x="${cw/2}" y="25" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle">區內屋苑租金回報率對比</text>\n${gr}${b}${l}${v}<text x="${cw-20}" y="${by+50}" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">資料來源: 28Hse | 富榮地產整理</text>\n</svg>`;
+  return `<?xml version="1.0"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${cw} ${ch}" width="${cw}" height="${ch}">\n<rect width="${cw}" height="${ch}" fill="#f8fafc" rx="8"/><text x="${cw/2}" y="25" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle">區內屋苑租金回報率對比</text>\n${gr}${b}${l}${v}<text x="${cw-20}" y="${by+50}" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">僅供參考</text>\n</svg>`;
 }
 
 function pie(){
@@ -109,7 +109,7 @@ function htmlSec(){
   return`
   <section id="market-analysis" class="bg-gray-50 py-16">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-8"><h2 class="text-3xl font-bold text-gray-800">📊 市場分析 Market Analysis</h2><p class="text-gray-500 mt-2">更新於 ${DL} · RVD / Midland / 28Hse</p></div>
+      <div class="text-center mb-8"><h2 class="text-3xl font-bold text-gray-800">📊 市場分析 Market Analysis</h2><p class="text-gray-500 mt-2">更新於 ${DL} · 僅供參考</p></div>
 
       <div class="bg-white rounded-xl shadow-md p-6 mb-6">
         <h3 class="text-xl font-bold text-gray-800 mb-4">香港住宅市場概況</h3>
@@ -167,8 +167,8 @@ function htmlSec(){
 
 function main(){
   const files=[
-    ["price_idx",bar(d.im,d.iv,170,"香港住宅價格指數走勢","#0284c7","#93c5fd","","RVD")],
-    ["volume",bar(d.vm,d.vv,8000,"每月住宅成交宗數","#16a34a","#86efac","","土地註冊處")],
+    ["price_idx",bar(d.im,d.iv,170,"香港住宅價格指數走勢","#0284c7","#93c5fd","","僅供參考")],
+    ["volume",bar(d.vm,d.vv,8000,"每月住宅成交宗數","#16a34a","#86efac","","僅供參考")],
     ["tkw_cmp",cmp()],["rent_yield",rent()],["tx_type",pie()]];
   files.forEach(([n,s])=>{fs.writeFileSync(path.join(OUT,`${n}_${D}.svg`),s,"utf-8");console.log(`✅ ${n}`);});
 
