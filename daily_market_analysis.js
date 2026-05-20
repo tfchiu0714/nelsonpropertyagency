@@ -77,6 +77,18 @@ function pie(){
 
 function rnText(){return`🔥 香港楼市2026年5月数据更新｜土瓜湾竟然还在"6字头"
 
+🏗️ 市区重建动态：
+
+市建局在土瓜湾推进多个重建项目，其中两个重点：
+
+KC-019 土瓜湾道/马头角道：总楼面约59,120平方米，提供约1,223个住宅单位。规划包括20米阔海滨长廊、连接启德海滨。预计2033年落成，已进入收购阶段。
+
+KC-016 土瓜湾道/荣光街：2021年启动，已完成法定规划程序，进入收购阶段。
+
+全区旧楼重建范围覆盖十三街、五街片区，市建局以「小社区模式」分阶段推进。
+
+对楼市影响：收购补偿价设定区域价格锚点，重建完成后区域面貌和配套将全面升级，中长期利好区内物业价值。
+
 📊 整体市场：
 
 香港住宅价格指数已连升9个月，5月最新报156.14点。
@@ -103,7 +115,7 @@ S&P预计2026全年楼价升8-10%，CBRE看3-5%。
 
 💾 保存此帖
 
-#香港楼市 #土瓜湾 #九龙楼市 #富荣地产`;}
+#香港楼市 #土瓜湾 #九龙楼市 #市区重建 #富荣地产`;}
 
 function htmlSec(){
   return`
@@ -158,8 +170,35 @@ function htmlSec(){
         </div>
       </div>
 
+      <!-- URA Redevelopment -->
+      <div class="bg-white rounded-xl shadow-md p-6 mb-6">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">🏗️ 市區重建 URA Redevelopment</h3>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="space-y-3">
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <p class="font-bold text-brand">KC-019 土瓜灣道/馬頭角道</p>
+              <p class="text-sm text-gray-600 mt-1">總樓面59,120m² · 約1,223伙</p>
+              <p class="text-sm text-gray-600">20米海濱長廊連接啟德 · 預計2033年落成</p>
+            </div>
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <p class="font-bold text-brand">KC-016 土瓜灣道/榮光街</p>
+              <p class="text-sm text-gray-600 mt-1">2021年啟動 · 已完成法定規劃 · 收購進行中</p>
+            </div>
+          </div>
+          <div class="p-4 bg-gray-50 rounded-lg text-sm text-gray-600">
+            <p class="font-semibold mb-2">對區內樓市的影響</p>
+            <ul class="space-y-1">
+              <li>• 收購補償價設定區域價格錨點</li>
+              <li>• 重建後區域面貌及配套全面升級</li>
+              <li>• 海濱長廊連接啟德 — 板塊聯動效應</li>
+              <li>• 「小社區模式」分階段推進</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-lg p-4">
-        <div class="flex"><div class="text-yellow-600 text-xl mr-3">💡</div><div><p class="font-bold text-yellow-800">富榮地產市場觀察</p><p class="text-yellow-700 text-sm mt-1">土瓜灣是全九龍少數能找到「6字頭呎價」的分區。沙中線通車3年樓價尚未完全反映交通紅利，這個「九龍價格窪地」可能在2-3年內消失。細戶型租務需求穩健，租金回報吸引力持續上升。</p></div></div>
+        <div class="flex"><div class="text-yellow-600 text-xl mr-3">💡</div><div><p class="font-bold text-yellow-800">富榮地產市場觀察</p><p class="text-yellow-700 text-sm mt-1">土瓜灣是全九龍少數能找到「6字頭呎價」的分區。沙中線通車3年樓價尚未完全反映交通紅利，市區重建接連推進令這個「九龍價格窪地」可能在2-3年內消失。細戶型租務需求穩健，租金回報吸引，配合重建紅利，中長期升值空間值得關注。</p></div></div>
       </div>
     </div>
   </section>`;
