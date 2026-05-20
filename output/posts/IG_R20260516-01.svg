@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="50%" style="stop-color:#0369a1"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-opacity="0.15"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <!-- Subtle pattern -->
+  <rect width="1080" height="1080" fill="rgba(255,255,255,0.03)" rx="0" ry="0"/>
+
+  <!-- Agency Header -->
+  <text x="540" y="90" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="32" font-weight="700" fill="rgba(255,255,255,0.9)" text-anchor="middle" letter-spacing="3">富榮地產</text>
+  <text x="540" y="120" font-family="'Segoe UI',sans-serif" font-size="16" fill="rgba(255,255,255,0.5)" text-anchor="middle">Nelson Property Agency · E-137150</text>
+
+  <!-- Type Badge -->
+  <rect x="460" y="145" width="160" height="34" rx="17" fill="#38bdf8"/>
+  <text x="540" y="168" font-family="'Segoe UI',sans-serif" font-size="16" font-weight="600" fill="#fff" text-anchor="middle">🏠 售盤</text>
+
+  <!-- Main Content Card -->
+  <rect x="60" y="200" width="960" height="660" rx="24" fill="#fff" filter="url(#shadow)"/>
+
+  <!-- District Header -->
+  <text x="540" y="270" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="42" font-weight="700" fill="#1e293b" text-anchor="middle">麟祥街 Lun Chun Street</text>
+  <text x="540" y="305" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="18" fill="#64748b" text-anchor="middle">不交吉</text>
+
+  <line x1="180" y1="325" x2="900" y2="325" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Price Highlight -->
+  <text x="540" y="395" font-family="'Segoe UI',sans-serif" font-size="56" font-weight="700" fill="#0284c7" text-anchor="middle">HK$4,550,000</text>
+  <text x="540" y="425" font-family="'Segoe UI',sans-serif" font-size="20" fill="#64748b" text-anchor="middle">$8,379/呎</text>
+
+  <!-- Specs Grid -->
+  <!-- Size -->
+  <rect x="120" y="460" width="160" height="80" rx="12" fill="#f0f9ff"/>
+  <text x="200" y="500" font-family="'Segoe UI',sans-serif" font-size="32" font-weight="700" fill="#0369a1" text-anchor="middle">543</text>
+  <text x="200" y="525" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">實用面積 sq ft</text>
+
+  <!-- Bedrooms -->
+  <rect x="380" y="460" width="160" height="80" rx="12" fill="#f0f9ff"/>
+  <text x="460" y="500" font-family="'Segoe UI',sans-serif" font-size="32" font-weight="700" fill="#0369a1" text-anchor="middle">-</text>
+  <text x="460" y="525" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">睡房</text>
+
+  <!-- Layout -->
+  <rect x="640" y="460" width="160" height="80" rx="12" fill="#f0f9ff"/>
+  <text x="720" y="500" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="26" font-weight="700" fill="#0369a1" text-anchor="middle">-</text>
+  <text x="720" y="525" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">浴室</text>
+
+  <!-- Tags -->
+  <g>
+    <rect x="385" y="570" width="90" height="30" rx="15" fill="#e0f2fe"/>
+        <text x="430" y="590" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="14" fill="#0369a1" text-anchor="middle">收租</text><rect x="495" y="570" width="90" height="30" rx="15" fill="#e0f2fe"/>
+        <text x="540" y="590" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="14" fill="#0369a1" text-anchor="middle">投資</text>
+  </g>
+
+  <!-- MTR + School -->
+  <text x="540" y="650" font-family="'Segoe UI',sans-serif" font-size="16" fill="#64748b" text-anchor="middle">
+    <tspan>🚇 N/A</tspan>
+    <tspan dx="30">🏫 校網 N/A</tspan>
+    <tspan dx="30">📋 R20260516-01</tspan>
+  </text>
+
+  <!-- Hook / Key Selling Point -->
+  <rect x="120" y="685" width="840" height="60" rx="12" fill="#fef9c3"/>
+  <text x="540" y="722" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#854d0e" text-anchor="middle">
+    📊 現有租約 · 即買即收租 · 回報3.2-3.7%
+  </text>
+
+  <!-- WhatsApp CTA -->
+  <rect x="290" y="770" width="500" height="56" rx="28" fill="#25D366"/>
+  <text x="540" y="806" font-family="'Segoe UI',sans-serif" font-size="22" font-weight="600" fill="#fff" text-anchor="middle">📲 WhatsApp 查詢 +852 9348 6774</text>
+
+  <!-- Footer -->
+  <text x="540" y="900" font-family="'Segoe UI',sans-serif" font-size="12" fill="rgba(255,255,255,0.4)" text-anchor="middle">富榮地產 Nelson Property Agency · 牌照 E-137150 · nelsonpropertyagency.com</text>
+</svg>

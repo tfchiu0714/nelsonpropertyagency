@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" width="1080" height="1440">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="50%" style="stop-color:#0369a1"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+  <text x="540" y="70" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="rgba(255,255,255,0.9)" text-anchor="middle" letter-spacing="3">富榮地產 Nelson Property Agency</text>
+  <rect x="60" y="95" width="960" height="50" rx="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="540" y="128" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">📋 R20260516-10 · 龍圖街 Lung To Street</text>
+  <rect x="60" y="165" width="960" height="902" rx="20" fill="#fff"/>
+  <text x="540" y="225" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#1e293b" text-anchor="middle">395万龙图街唐楼531呎｜$4M以下竟然有500呎+两房</text>
+  <line x1="150" y1="250" x2="930" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="540" y="295" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" fill="#475569" text-anchor="middle">HK$3,950,000 · 531呎 · 兩房一廳 · $7,439/呎</text>
+  <rect x="100" y="315" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="360" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="17" fill="#334155" text-anchor="middle">$395万，531呎，两房一厅，龙图街唐六楼。折合呎价仅$7,439。在$4M预算内买到500呎以上的单位，现在市场上已经非常少见。</text>
+  <text x="100" y="410" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">核心逻辑拆解：</text>
+  <text x="100" y="448" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">531呎的实用空间在分类上属于「大单位」级别——客厅可以同时摆沙发和餐桌、两间卧室都能放下双人床。</text>
+    <text x="100" y="500" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">唐楼虽然无电梯，但呎价折让也是实在的——对比同区电梯楼约$9K-11K/呎，这套相当于打了七折。</text>
+    <text x="100" y="552" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">大呎数单位在转售市场的溢价持续存在：500呎+的交吉盘放盘量少，需求端却一直有家庭客在找。</text>
+    
+  <rect x="100" y="582" width="880" height="1" fill="#e2e8f0"/>
+  <text x="100" y="607" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">📊 账目数据明细：</text>
+  <text x="120" y="649" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 总价：$3,950,000</text>
+    <text x="120" y="681" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 首套房印花税：约$88,875 (2.25%)</text>
+    <text x="120" y="713" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 7成按揭首期：$1,185,000</text>
+    <text x="120" y="745" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 月供估算(30年@3.5%)：约$12,410/月</text>
+    <text x="120" y="777" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 装修预算(全屋翻新)：$120K-$180K</text>
+    
+  <rect x="100" y="822" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="872" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#475569" text-anchor="middle">需要有实际空间的小家庭，或者计划购入后翻新转售的投资者。大呎数唐楼在市场上的停留时间通常远低于细单位。</text>
+  <rect x="190" y="912" width="700" height="60" rx="30" fill="#25D366"/>
+  <text x="540" y="947" font-family="'Segoe UI',sans-serif" font-size="22" font-weight="600" fill="#fff" text-anchor="middle">📲 WhatsApp 查询 +852 9348 6774</text>
+  <text x="540" y="992" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">富榮地產 Nelson Property Agency · 牌照 E-137150 · nelsonpropertyagency.com</text>
+  <text x="540" y="1022" font-family="'Segoe UI',sans-serif" font-size="12" fill="rgba(255,255,255,0.25)" text-anchor="middle">#香港楼市 #龍圖街 #唐樓 #實用 #大單位 #富荣地产</text>
+  <text x="540" y="1047" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="14" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="middle">💾 储存此帖 · 随时参考楼市数据</text>
+</svg>

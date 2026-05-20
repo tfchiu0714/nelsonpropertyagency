@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" width="1080" height="1440">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="50%" style="stop-color:#0369a1"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+  <text x="540" y="70" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="rgba(255,255,255,0.9)" text-anchor="middle" letter-spacing="3">富榮地產 Nelson Property Agency</text>
+  <rect x="60" y="95" width="960" height="50" rx="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="540" y="128" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">📋 R20260516-04 · 龍圖街 Lung To Street</text>
+  <rect x="60" y="165" width="960" height="902" rx="20" fill="#fff"/>
+  <text x="540" y="225" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#1e293b" text-anchor="middle">389万龙图街498呎｜近500呎交吉盘为什么不到$8K/呎？</text>
+  <line x1="150" y1="250" x2="930" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="540" y="295" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" fill="#475569" text-anchor="middle">HK$3,890,000 · 498呎 · 交吉 · $7,811/呎</text>
+  <rect x="100" y="315" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="360" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="17" fill="#334155" text-anchor="middle">498呎，不到400万，折合呎价$7,811。交吉放售。这三个数字放在一起，对买家来说是一个值得细算的机会。</text>
+  <text x="100" y="410" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">核心逻辑拆解：</text>
+  <text x="100" y="448" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">近500呎的实用户型在交吉盘市场属于稀缺供应——多数这个面积段要么是分契楼要么是不交吉。</text>
+    <text x="100" y="500" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">交吉意味着零时间成本：过户当天你就可以安排装修队进场，不用等租约到期。</text>
+    <text x="100" y="552" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">呎价$7,811对比同区交吉盘均价$8.2K-$9K/呎，存在实质折让。</text>
+    
+  <rect x="100" y="582" width="880" height="1" fill="#e2e8f0"/>
+  <text x="100" y="607" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">📊 账目数据明细：</text>
+  <text x="120" y="649" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 总价：$3,890,000</text>
+    <text x="120" y="681" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 首套房印花税：约$87,525 (2.25%)</text>
+    <text x="120" y="713" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 7成按揭首期：$1,167,000</text>
+    <text x="120" y="745" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 月供估算(30年@3.5%)：约$12,230/月</text>
+    <text x="120" y="777" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 装修预算建议：$80K-$150K</text>
+    
+  <rect x="100" y="822" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="872" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#475569" text-anchor="middle">希望直接入住或翻新后自住/放租的自住型买家或中长线投资者。大呎数交吉盘在市场上停留天数通常较短。</text>
+  <rect x="190" y="912" width="700" height="60" rx="30" fill="#25D366"/>
+  <text x="540" y="947" font-family="'Segoe UI',sans-serif" font-size="22" font-weight="600" fill="#fff" text-anchor="middle">📲 WhatsApp 查询 +852 9348 6774</text>
+  <text x="540" y="992" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">富榮地產 Nelson Property Agency · 牌照 E-137150 · nelsonpropertyagency.com</text>
+  <text x="540" y="1022" font-family="'Segoe UI',sans-serif" font-size="12" fill="rgba(255,255,255,0.25)" text-anchor="middle">#香港楼市 #龍圖街 #交吉 #實用 # #富荣地产</text>
+  <text x="540" y="1047" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="14" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="middle">💾 储存此帖 · 随时参考楼市数据</text>
+</svg>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" width="1080" height="1440">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="50%" style="stop-color:#0369a1"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+  <text x="540" y="70" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="rgba(255,255,255,0.9)" text-anchor="middle" letter-spacing="3">富榮地產 Nelson Property Agency</text>
+  <rect x="60" y="95" width="960" height="50" rx="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="540" y="128" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">📋 R20260516-02 · 鹿鳴街 Luk Ming Street</text>
+  <rect x="60" y="165" width="960" height="902" rx="20" fill="#fff"/>
+  <text x="540" y="225" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#1e293b" text-anchor="middle">190万上车葵涌｜带租约（不交吉）才是真正的「懒人理财」？</text>
+  <line x1="150" y1="250" x2="930" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="540" y="295" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" fill="#475569" text-anchor="middle">HK$1,900,000 · 257呎 · 開放式 · $7,393/呎</text>
+  <rect x="100" y="315" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="360" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="17" fill="#334155" text-anchor="middle">很多首次置业的人听到「不交吉（带租约）」就摇头，觉得看不了房麻烦。但在投资客眼里，这恰恰是最高效的刚需防御盘。</text>
+  <text x="100" y="410" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">核心逻辑拆解：</text>
+  <text x="100" y="448" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">买入即收租：产权交割完成当天，你就开始直接承接现有租金收益，省去了空置期、重新装修、放盘中介费的全部时间成本与资金损耗。</text>
+    <text x="100" y="500" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">极高的入住率基数：葵涌细户型（300呎以下）长年维持在95%以上的超高出租率，属于整个新界西的刚需租赁大后方。</text>
+    <text x="100" y="552" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">折合呎价$7,393/呎。对于首次进入香港收租房市场的买家，这是试错成本极低的起步支点。</text>
+    
+  <rect x="100" y="582" width="880" height="1" fill="#e2e8f0"/>
+  <text x="100" y="607" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">📊 账目数据明细：</text>
+  <text x="120" y="649" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 总价：$1,900,000</text>
+    <text x="120" y="681" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 首套房印花税：$100</text>
+    <text x="120" y="713" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 9成按揭首期：$190,000</text>
+    <text x="120" y="745" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 月供估算(30年@3.5%)：约$7,680/月</text>
+    <text x="120" y="777" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 非常适合作为资产配置的起步支点</text>
+    
+  <rect x="100" y="822" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="872" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#475569" text-anchor="middle">手头有闲置现金、希望快速切入香港收租房市场的防御型买家。自住可能不适合，但作为资产配置是极低试错成本的标的。</text>
+  <rect x="190" y="912" width="700" height="60" rx="30" fill="#25D366"/>
+  <text x="540" y="947" font-family="'Segoe UI',sans-serif" font-size="22" font-weight="600" fill="#fff" text-anchor="middle">📲 WhatsApp 查询 +852 9348 6774</text>
+  <text x="540" y="992" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">富榮地產 Nelson Property Agency · 牌照 E-137150 · nelsonpropertyagency.com</text>
+  <text x="540" y="1022" font-family="'Segoe UI',sans-serif" font-size="12" fill="rgba(255,255,255,0.25)" text-anchor="middle">#香港楼市 #鹿鳴街 #收租 #葵涌 #上車盤 #富荣地产</text>
+  <text x="540" y="1047" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="14" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="middle">💾 储存此帖 · 随时参考楼市数据</text>
+</svg>

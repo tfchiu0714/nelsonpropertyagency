@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" width="1080" height="1440">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="50%" style="stop-color:#0369a1"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+  <text x="540" y="70" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="rgba(255,255,255,0.9)" text-anchor="middle" letter-spacing="3">富榮地產 Nelson Property Agency</text>
+  <rect x="60" y="95" width="960" height="50" rx="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="540" y="128" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">📋 R20260516-09 · 建安大廈 Kin On Building</text>
+  <rect x="60" y="165" width="960" height="902" rx="20" fill="#fff"/>
+  <text x="540" y="225" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#1e293b" text-anchor="middle">378万建安大厦320呎两房｜$11.8K/呎买的是什么？</text>
+  <line x1="150" y1="250" x2="930" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="540" y="295" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" fill="#475569" text-anchor="middle">HK$3,780,000 · 320呎 · 兩房一廳 · $11,813/呎</text>
+  <rect x="100" y="315" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="360" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="17" fill="#334155" text-anchor="middle">$378万，320呎建安大厦低层两房一厅。呎价$11,813，是这批放盘中呎价最高的一间，但有它的道理。</text>
+  <text x="100" y="410" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">核心逻辑拆解：</text>
+  <text x="100" y="448" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">两房一厅+一卫在320呎里做到，说明间隔效率相当高。低层单位虽然呎价不低，但维护成本低、出入方便。</text>
+    <text x="100" y="500" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">建安大厦保养状况良好，不需要大笔维修储备金投入——这对首次置业者来说是一个隐形成本优势。</text>
+    <text x="100" y="552" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">交吉放售，意味着你可以按自己的节奏装修入住，无需等待租约到期。</text>
+    
+  <rect x="100" y="582" width="880" height="1" fill="#e2e8f0"/>
+  <text x="100" y="607" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">📊 账目数据明细：</text>
+  <text x="120" y="649" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 总价：$3,780,000</text>
+    <text x="120" y="681" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 首套房印花税：约$56,700 (1.5%阶梯)</text>
+    <text x="120" y="713" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 7成按揭首期：$1,134,000</text>
+    <text x="120" y="745" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 月供估算(30年@3.5%)：约$11,880/月</text>
+    <text x="120" y="777" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 装修预算建议：轻装修为主，$50K-$80K</text>
+    
+  <rect x="100" y="822" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="872" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#475569" text-anchor="middle">偏好低层、注重物业维护状况的首次置业者。呎价虽然偏高，但维护成本低、入场门槛适中。</text>
+  <rect x="190" y="912" width="700" height="60" rx="30" fill="#25D366"/>
+  <text x="540" y="947" font-family="'Segoe UI',sans-serif" font-size="22" font-weight="600" fill="#fff" text-anchor="middle">📲 WhatsApp 查询 +852 9348 6774</text>
+  <text x="540" y="992" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">富榮地產 Nelson Property Agency · 牌照 E-137150 · nelsonpropertyagency.com</text>
+  <text x="540" y="1022" font-family="'Segoe UI',sans-serif" font-size="12" fill="rgba(255,255,255,0.25)" text-anchor="middle">#香港楼市 #建安大廈 #自住 #上車 # #富荣地产</text>
+  <text x="540" y="1047" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="14" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="middle">💾 储存此帖 · 随时参考楼市数据</text>
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" width="1080" height="1440">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="50%" style="stop-color:#0369a1"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+  <text x="540" y="70" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="rgba(255,255,255,0.9)" text-anchor="middle" letter-spacing="3">富榮地產 Nelson Property Agency</text>
+  <rect x="60" y="95" width="960" height="50" rx="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="540" y="128" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">📋 R20260516-07 · 九龍城道 Kowloon City Road</text>
+  <rect x="60" y="165" width="960" height="986" rx="20" fill="#fff"/>
+  <text x="540" y="225" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#1e293b" text-anchor="middle">210万土瓜湾分契唐楼｜4.6-5.7%净回报是怎么算出来的</text>
+  <line x1="150" y1="250" x2="930" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="540" y="295" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" fill="#475569" text-anchor="middle">HK$2,100,000 · 301呎 · 兩房一廳 · $6,977/呎</text>
+  <rect x="100" y="315" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="360" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="17" fill="#334155" text-anchor="middle">土瓜湾唐七楼分契，301呎两房一厅，开价$210万。不交吉放售，现有租约。折合呎价$6,977。</text>
+  <text x="100" y="410" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">核心逻辑拆解：</text>
+  <text x="100" y="448" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">4.6-5.7%的净回报在这个利率环境下非常稀缺——当前市场住宅平均净回报约2.5-3.5%，这套盘高出市场中枢约2-3个百分点。</text>
+    <text x="100" y="500" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">分契楼的核心逻辑：买入价低、呎价低、但租金收入不低。唐楼的租客群体以长期居住为主，换手率低、空置期短。</text>
+    <text x="100" y="552" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">土瓜湾MTR步行8分钟 + 34校网。地铁通车后该区租金走势持续向上，这是过去3年可以验证的趋势。</text>
+    <text x="100" y="604" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">注意：分契楼需要律师核查大厦公契(DMC)状态，这是尽职调查的必要步骤。</text>
+    
+  <rect x="100" y="634" width="880" height="1" fill="#e2e8f0"/>
+  <text x="100" y="659" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">📊 账目数据明细：</text>
+  <text x="120" y="701" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 总价：$2,100,000</text>
+    <text x="120" y="733" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 首套房印花税：约$100</text>
+    <text x="120" y="765" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 7成按揭首期：$630,000</text>
+    <text x="120" y="797" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 月供估算(30年@3.5%)：约$6,600/月</text>
+    <text x="120" y="829" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 月租收入估算：$8,000-$10,000</text>
+    <text x="120" y="861" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 每月净正现金流：$1,400-$3,400</text>
+    
+  <rect x="100" y="906" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="956" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#475569" text-anchor="middle">熟悉旧楼操作逻辑的收租投资者。分契唐楼需要对大厦结构和管理状况有一定的了解和承受力。回报率在高息环境下仍然亮眼。</text>
+  <rect x="190" y="996" width="700" height="60" rx="30" fill="#25D366"/>
+  <text x="540" y="1031" font-family="'Segoe UI',sans-serif" font-size="22" font-weight="600" fill="#fff" text-anchor="middle">📲 WhatsApp 查询 +852 9348 6774</text>
+  <text x="540" y="1076" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">富榮地產 Nelson Property Agency · 牌照 E-137150 · nelsonpropertyagency.com</text>
+  <text x="540" y="1106" font-family="'Segoe UI',sans-serif" font-size="12" fill="rgba(255,255,255,0.25)" text-anchor="middle">#香港楼市 #九龍城道 #收租 #唐樓 #分契 #富荣地产</text>
+  <text x="540" y="1131" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="14" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="middle">💾 储存此帖 · 随时参考楼市数据</text>
+</svg>

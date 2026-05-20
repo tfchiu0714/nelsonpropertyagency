@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" width="1080" height="1440">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="50%" style="stop-color:#0369a1"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+  <text x="540" y="70" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="rgba(255,255,255,0.9)" text-anchor="middle" letter-spacing="3">富榮地產 Nelson Property Agency</text>
+  <rect x="60" y="95" width="960" height="50" rx="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="540" y="128" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">📋 R20260516-08 · 金都豪苑 King's Court</text>
+  <rect x="60" y="165" width="960" height="870" rx="20" fill="#fff"/>
+  <text x="540" y="225" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#1e293b" text-anchor="middle">$4,200/月金都豪苑车位｜租车位也要精打细算</text>
+  <line x1="150" y1="250" x2="930" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="540" y="295" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" fill="#475569" text-anchor="middle">HK$4,200/月 ·  · 車位 · </text>
+  <rect x="100" y="315" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="360" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="17" fill="#334155" text-anchor="middle">金都豪苑私家车位招租，月租$4,200。区内同类车位租金范围$3,800-$5,000/月，这个放盘定价偏中下。</text>
+  <text x="100" y="410" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">核心逻辑拆解：</text>
+  <text x="100" y="448" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">金都豪苑车位供应量有限，长期保持90%+出租率，空置期通常短于2周。</text>
+    <text x="100" y="500" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">$4,200/月在全港市区车位租金中属于中等偏低水平——铜锣湾、湾仔的车位月租可达$6,000+。</text>
+    <text x="100" y="552" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">短租约可谈，灵活度比停车场月租更高。适合临时需要停车解决方案的车主。</text>
+    
+  <rect x="100" y="582" width="880" height="1" fill="#e2e8f0"/>
+  <text x="100" y="607" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#0369a1">📊 账目数据明细：</text>
+  <text x="120" y="649" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 月租：$4,200/月</text>
+    <text x="120" y="681" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 按金：2个月租金标准，可商议</text>
+    <text x="120" y="713" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 最短租期：可谈</text>
+    <text x="120" y="745" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#334155">• 车位类型：室内有盖</text>
+    
+  <rect x="100" y="790" width="880" height="1" fill="#e2e8f0"/>
+  <text x="540" y="840" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="15" fill="#475569" text-anchor="middle">金都豪苑住户、附近工作的驾驶者、或者需要短期停车方案的租客。</text>
+  <rect x="190" y="880" width="700" height="60" rx="30" fill="#25D366"/>
+  <text x="540" y="915" font-family="'Segoe UI',sans-serif" font-size="22" font-weight="600" fill="#fff" text-anchor="middle">📲 WhatsApp 查询 +852 9348 6774</text>
+  <text x="540" y="960" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">富榮地產 Nelson Property Agency · 牌照 E-137150 · nelsonpropertyagency.com</text>
+  <text x="540" y="990" font-family="'Segoe UI',sans-serif" font-size="12" fill="rgba(255,255,255,0.25)" text-anchor="middle">#香港楼市 #金都豪苑 #車位 #招租 # #富荣地产</text>
+  <text x="540" y="1015" font-family="'Noto Sans SC','Segoe UI',sans-serif" font-size="14" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="middle">💾 储存此帖 · 随时参考楼市数据</text>
+</svg>
