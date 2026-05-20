@@ -190,6 +190,27 @@ function main(){
     cp.execSync('git push origin master',{cwd:__dirname});
     console.log("✅ Pushed to GitHub");
   }catch(e){console.log("⚠ Git push:",e.message);}
+  // 5. Generate single "post everything" file
+  const postParts = [
+    "=== 🏠 富榮地產 市場分析 — RedNote Post ===",
+    `日期: ${DL}`,
+    "",
+    rnText(),
+    "",
+    "=== 📊 圖表 (左滑查看) ===",
+    ""
+  ];
+  ["price_idx","volume","tkw_cmp","rent_yield","tx_type"].forEach(n => {
+    const p = path.join(OUT, `${n}_${D}.svg`);
+    postParts.push(`🖼 ${n}.svg — ${fs.statSync(p).size} bytes`);
+  });
+  postParts.push("");
+  postParts.push("=== 📎 以上內容已同步上傳至 nelsonpropertyagency.com ===");
+
+  const postFilePath = path.join(OUT, `rednote_post_${D}.txt`);
+  fs.writeFileSync(postFilePath, postParts.join("\n"), "utf-8");
+  console.log(`✅ rednote_post_${D}.txt (single file)`);
+
   console.log("\n🎉 Done");
 }
 
