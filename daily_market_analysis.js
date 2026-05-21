@@ -263,6 +263,22 @@ function main(){
   fs.writeFileSync(postFilePath, postParts.join("\n"), "utf-8");
   console.log(`✅ rednote_post_${D}.txt (single file)`);
 
+  // 6. Weekly blog post (every Monday)
+  const dayOfWeek = new Date().getDay(); // 0=Sun, 1=Mon
+  if (dayOfWeek === 1) {
+    try {
+      const blogScript = path.join(__dirname, "generate_blog_post.js");
+      if (fs.existsSync(blogScript)) {
+        cp.execSync(`node "${blogScript}"`, { cwd: __dirname, stdio: "inherit" });
+        console.log("✅ Weekly blog post generated");
+      }
+    } catch(e) {
+      console.log("⚠ Blog post:", e.message);
+    }
+  } else {
+    console.log(`ℹ Today is day ${dayOfWeek} — blog posts on Mondays only`);
+  }
+
   console.log("\n🎉 Done");
 }
 
