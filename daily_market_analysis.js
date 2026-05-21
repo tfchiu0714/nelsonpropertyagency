@@ -7,6 +7,19 @@
 
 const fs=require("fs"),path=require("path"),cp=require("child_process");
 const D=(new Date).toISOString().split("T")[0],DL=(new Date).toISOString().slice(0,10).replace(/-/g,".");
+// Resolve git path for isolated cron sessions (no PATH)
+const GIT = (() => {
+  const candidates = [
+    "C:\\Program Files\\Git\\bin\\git.exe",
+    "C:\\Program Files\\Git\\cmd\\git.exe",
+    "git"
+  ];
+  for (const g of candidates) {
+    try { cp.execSync(`"${g}" --version`, {stdio:"pipe"}); return g; }
+    catch(e) {}
+  }
+  return "git";
+})();
 const OUT=path.join(__dirname,"output","daily"),HTML=path.join(__dirname,"index.html");
 if(!fs.existsSync(OUT))fs.mkdirSync(OUT,{recursive:true});
 
@@ -213,20 +226,20 @@ function main(){
 
   fs.writeFileSync(path.join(OUT,`rn_${D}.md`),rnText(),"utf-8");console.log(`✅ rn post`);
 
-  // Update HTML
+  // Update HTML (force UTF-8)
   if(fs.existsSync(HTML)){
-    let h=fs.readFileSync(HTML,"utf-8");
+    let h=fs.readFileSync(HTML,{encoding:"utf8"});
     const tag='<!-- MKT_SEC -->',end='<!-- END_MKT -->';
     if(h.includes(tag)){const a=h.indexOf(tag),b=h.indexOf(end)+end.length;h=h.slice(0,a)+tag+htmlSec()+'\n'+end+h.slice(b);}
     else{h=h.replace('</footer>',tag+htmlSec()+'\n'+end+'\n</footer>');}
     fs.writeFileSync(HTML,h,"utf-8");console.log("✅ HTML updated");
   }
 
-  // Git push
+  // Git push (with resolved git path for isolated cron)
   try{
-    cp.execSync('git add -A',{cwd:__dirname});
-    cp.execSync(`git commit -m "Daily market analysis ${DL}"`,{cwd:__dirname});
-    cp.execSync('git push origin master',{cwd:__dirname});
+    cp.execSync(`"${GIT}" add -A`,{cwd:__dirname});
+    cp.execSync(`"${GIT}" -c user.name="Nelson Property Agency" -c user.email="info@nelsonpropertyagency.com" commit -m "Daily market analysis ${DL}"`,{cwd:__dirname});
+    cp.execSync(`"${GIT}" push origin master`,{cwd:__dirname});
     console.log("✅ Pushed to GitHub");
   }catch(e){console.log("⚠ Git push:",e.message);}
   // 5. Generate single "post everything" file
