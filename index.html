@@ -238,18 +238,83 @@
     </div>
   </article>
 
+    <!-- Archived Posts (hidden, toggle-able) -->
+    
+  <div id="blog-property-market" class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mb-8 hidden">
+    <div class="p-6 lg:p-8">
+      <div class="text-sm text-gray-400 mb-2">第1期 · 2026.05.25</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">📊 土瓜灣樓市每周觀察 — 重建進度與成交動向</h3>
+      <div class="prose prose-gray max-w-none text-gray-700 leading-relaxed whitespace-pre-line text-sm">
+## 土瓜灣樓市每周觀察
+
+### 本週重點
+市建局在土瓜灣的重建項目持續推進，KC-019及KC-016項目進入關鍵收購階段。近期區內二手成交維持活躍，30日平均呎價約$11,157/呎，按月升8.23%。
+
+### 重建紅利何時兌現？
+土瓜灣是全九龍少數仍有「6字頭呎價」的區域。沙中線通車3年，樓價尚未完全反映交通紅利。參考啟德發展經驗，市區重建完成後，區域面貌及配套將全面提升。
+
+### 投資者策略
+建議關注十三街周邊物業，收購補償價往往為區域設定價格錨點。細單位租金回報穩定（4.2-4.8%），適合作為收租組合配置。
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
+        <span class="bg-cyan-50 text-cyan-700 text-xs px-3 py-1 rounded-full">#土瓜灣樓市</span><span class="bg-cyan-50 text-cyan-700 text-xs px-3 py-1 rounded-full">#市區重建</span><span class="bg-cyan-50 text-cyan-700 text-xs px-3 py-1 rounded-full">#富榮地產</span>
+      </div>
+    </div>
+  </div>
+  
+  <div id="blog-food-guide" class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mb-8 hidden">
+    <div class="p-6 lg:p-8">
+      <div class="text-sm text-gray-400 mb-2">第0期 · 2026.05.21</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">🍜 土瓜灣搵食地圖 — 地膽推介10間隱世美食</h3>
+      <div class="prose prose-gray max-w-none text-gray-700 leading-relaxed whitespace-pre-line text-sm">
+## 土瓜灣搵食地圖 — 地膽推介
+
+### 🥇 必食之選
+
+**1. 義香荳品廠**（北帝街）
+老字號豆品店，豆腐花、豆漿每日新鮮製作。$12一碗熱豆腐花加黃糖，是土瓜灣人的集體回憶。
+
+**2. 海港燒鵝飯店**（上鄉道）
+皮脆肉嫩，$60左右的燒味飯性價比超高。
+
+**3. Thai Kitchen**（北帝街）
+正宗泰國菜，冬蔭功湯粉、泰式炒金邊粉水準穩定。
+
+**4. 海心閣茶餐廳**（海心公園旁）
+街坊推介：沙爹牛肉麵、菠蘿油、奶茶。$38的常餐全天候供應。
+
+### 🥈 隱世小店
+
+**5. 潮興魚蛋粉** — 潮州魚蛋、墨魚丸
+**6. 十三街咖啡** — 文青風格小店，精品咖啡$35起
+**7. 媽咪雞蛋仔** — 外脆內軟，朱古力味是招牌
+**8. 金寶泰國菜館** — 晚市小炒有水準
+
+### 💡 貼士
+- 北帝街（小泰國）一帶的泰國菜館，晚餐人均$80-120
+- 上鄉道老店多數只收現金
+- 周末早上海心公園旁邊的茶樓有推車點心
+
+土瓜灣的好，住過才知。下次來睇樓，記得預留時間搵食！
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
+        <span class="bg-cyan-50 text-cyan-700 text-xs px-3 py-1 rounded-full">#土瓜灣美食</span><span class="bg-cyan-50 text-cyan-700 text-xs px-3 py-1 rounded-full">#香港好去處</span><span class="bg-cyan-50 text-cyan-700 text-xs px-3 py-1 rounded-full">#搵食</span><span class="bg-cyan-50 text-cyan-700 text-xs px-3 py-1 rounded-full">#富榮地產</span>
+      </div>
+    </div>
+  </div>
+
     <!-- Archive -->
     <div class="max-w-3xl mx-auto">
       <h4 class="text-lg font-bold text-gray-700 mb-4">過往文章 Archive</h4>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         
-  <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition cursor-pointer" onclick="location.href='#blog-property-market'">
+  <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition cursor-pointer" onclick="toggleBlog('blog-property-market')">
     <div class="text-3xl mb-2">📊</div>
     <h4 class="font-bold text-gray-800 text-sm mb-1">土瓜灣樓市每周觀察 — 重建進度與成交動向</h4>
     <p class="text-xs text-gray-400">第1期 · 2026.05.25</p>
   </div>
         
-  <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition cursor-pointer" onclick="location.href='#blog-food-guide'">
+  <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition cursor-pointer" onclick="toggleBlog('blog-food-guide')">
     <div class="text-3xl mb-2">🍜</div>
     <h4 class="font-bold text-gray-800 text-sm mb-1">土瓜灣搵食地圖 — 地膽推介10間隱世美食</h4>
     <p class="text-xs text-gray-400">第0期 · 2026.05.21</p>
@@ -603,6 +668,13 @@
       document.getElementById('sd-r-ssd').textContent = ssd > 0 ? '$' + formatter.format(Math.round(ssd)) : '不適用 N/A';
       document.getElementById('sd-r-total').textContent = '$' + formatter.format(Math.round(total));
       r.classList.remove('hidden');
+    }
+
+    function toggleBlog(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.classList.toggle('hidden');
+      setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
     }
 
     function switchTab(tab) {

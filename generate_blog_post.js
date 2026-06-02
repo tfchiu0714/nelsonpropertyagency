@@ -162,9 +162,26 @@ ${post.content}
 }
 
 /* ─── Blog archive listing card ─── */
+/* ─── Archive article full HTML (hidden section for toggle) ─── */
+function blogArticleHTML(slug, title, cover, tags, content, dateLabel) {
+  return `
+  <div id="blog-${slug}" class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mb-8 hidden">
+    <div class="p-6 lg:p-8">
+      <div class="text-sm text-gray-400 mb-2">${dateLabel}</div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">${cover} ${title}</h3>
+      <div class="prose prose-gray max-w-none text-gray-700 leading-relaxed whitespace-pre-line text-sm">
+${content}
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
+        ${tags.map(t => `<span class="bg-cyan-50 text-cyan-700 text-xs px-3 py-1 rounded-full">${t}</span>`).join("")}
+      </div>
+    </div>
+  </div>`;
+}
+
 function blogCardHTML(slug, title, cover, date) {
   return `
-  <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition cursor-pointer" onclick="location.href='#blog-${slug}'">
+  <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition cursor-pointer" onclick="toggleBlog('blog-${slug}')">
     <div class="text-3xl mb-2">${cover}</div>
     <h4 class="font-bold text-gray-800 text-sm mb-1">${title}</h4>
     <p class="text-xs text-gray-400">${date}</p>
@@ -214,6 +231,7 @@ ${blogTag}
     <!-- Archive -->
     <div class="max-w-3xl mx-auto">
       <h4 class="text-lg font-bold text-gray-700 mb-4">過往文章 Archive</h4>
+      <p class="text-sm text-gray-400 mb-4">點擊 Archive 卡片展開閱讀舊文章</p>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         ${existingFiles.slice(0, 9).map(f => {
           try {
@@ -223,6 +241,14 @@ ${blogTag}
         }).join("\n        ")}
       </div>
     </div>
+
+    <!-- Archive full articles (hidden, toggle-able) -->
+    ${existingFiles.slice(1).map(f => {
+      try {
+        const data = JSON.parse(fs.readFileSync(path.join(BLOG_DIR, f), "utf-8"));
+        return blogArticleHTML(data.slug, data.title, data.cover, data.tags, data.content, data.dateLabel);
+      } catch(e) { return ""; }
+    }).join("\n    ")}
   </section>
 ${blogEnd}`;
 
