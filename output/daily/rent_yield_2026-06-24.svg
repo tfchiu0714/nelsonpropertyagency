@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330" width="700" height="330">
+<rect width="700" height="330" fill="#f8fafc" rx="8"/><text x="350" y="25" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle">區內屋苑租金回報率對比</text>
+<line x1="30" y1="280" x2="38" y2="280" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="284" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">0%</text>
+    <line x1="30" y1="236.36363636363637" x2="38" y2="236.36363636363637" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="240.36363636363637" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">1%</text>
+    <line x1="30" y1="192.72727272727272" x2="38" y2="192.72727272727272" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="196.72727272727272" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">2%</text>
+    <line x1="30" y1="149.0909090909091" x2="38" y2="149.0909090909091" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="153.0909090909091" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">3%</text>
+    <line x1="30" y1="105.45454545454544" x2="38" y2="105.45454545454544" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="109.45454545454544" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">4%</text>
+    <line x1="30" y1="61.81818181818181" x2="38" y2="61.81818181818181" stroke="#cbd5e1" stroke-width="1"/><text x="28" y="65.81818181818181" font-family="'Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">5%</text>
+    <rect x="50" y="96.72727272727272" width="100" height="183.27272727272728" rx="4" fill="#0284c7" opacity="1"/>
+    <rect x="174" y="114.18181818181819" width="100" height="165.8181818181818" rx="4" fill="#f59e0b" opacity="0.7"/>
+    <rect x="298" y="127.27272727272728" width="100" height="152.72727272727272" rx="4" fill="#f59e0b" opacity="0.7"/>
+    <rect x="422" y="140.36363636363635" width="100" height="139.63636363636365" rx="4" fill="#f59e0b" opacity="0.7"/>
+    <rect x="546" y="105.45454545454544" width="100" height="174.54545454545456" rx="4" fill="#f59e0b" opacity="0.7"/>
+    <text x="100" y="298" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">環海·東岸</text>
+    <text x="224" y="298" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">黃埔花園</text>
+    <text x="348" y="298" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">海逸豪園</text>
+    <text x="472" y="298" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">啟德1號</text>
+    <text x="596" y="298" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="11" fill="#64748b" text-anchor="middle">喜築</text>
+    <text x="100" y="88.72727272727272" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#0284c7" text-anchor="middle">4.2%</text>
+    <text x="224" y="106.18181818181819" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">3.8%</text>
+    <text x="348" y="119.27272727272728" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">3.5%</text>
+    <text x="472" y="132.36363636363635" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">3.2%</text>
+    <text x="596" y="97.45454545454544" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">4%</text>
+    <text x="680" y="330" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">僅供參考</text>
+</svg>
