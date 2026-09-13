@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="600" height="280">
+<rect width="600" height="280" fill="#f8fafc" rx="8"/><text x="300" y="25" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1e293b" text-anchor="middle">二手成交類別分佈</text>
+<path d="M200,200 L200,40 A160,160 0 1,1 55.22767160543691,268.12468665041166 Z" fill="#0284c7" opacity=".85"/>
+    <text x="287.8101042522096" y="255.72598667781563" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">68%</text>
+    <path d="M200,200 L55.22767160543691,268.12468665041166 A160,160 0 0,1 59.79093119298179,122.91941214372561 Z" fill="#f59e0b" opacity=".85"/>
+    <text x="96.05131772196393" y="196.7332810558746" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">15%</text>
+    <path d="M200,200 L59.79093119298179,122.91941214372561 A160,160 0 0,1 131.87531334958834,55.22767160543691 Z" fill="#16a34a" opacity=".85"/>
+    <text x="128.80710098341643" y="124.18726274817317" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">10%</text>
+    <path d="M200,200 L131.87531334958834,55.22767160543691 A160,160 0 0,1 199.99999999999997,40 Z" fill="#94a3b8" opacity=".85"/>
+    <text x="177.3131028947596" y="98.50465675837026" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">7%</text>
+    <rect x="420" y="80" width="16" height="16" rx="3" fill="#0284c7"/><text x="445" y="93" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="13" fill="#334155">住宅(私樓) (68%)</text>
+    <rect x="420" y="110" width="16" height="16" rx="3" fill="#f59e0b"/><text x="445" y="123" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="13" fill="#334155">住宅(公居屋) (15%)</text>
+    <rect x="420" y="140" width="16" height="16" rx="3" fill="#16a34a"/><text x="445" y="153" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="13" fill="#334155">工商舖 (10%)</text>
+    <rect x="420" y="170" width="16" height="16" rx="3" fill="#94a3b8"/><text x="445" y="183" font-family="'Noto Sans TC','Segoe UI',sans-serif" font-size="13" fill="#334155">車位 (7%)</text>
+    </svg>
